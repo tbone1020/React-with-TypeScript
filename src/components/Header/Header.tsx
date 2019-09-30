@@ -1,25 +1,25 @@
 import * as React from "react";
+import Navigation from '../../shared/components/Navigation/Navigation';
 
-interface IState {
-  logo: string
+export interface IState {
+  logo: string;
 }
-interface IProps {}
+export interface IProps {}
 
 export default class Header extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      logo: 'React with TypeScript'
+      logo: "React-TypeScript"
     }
   }
 
-  componentDidMount(): void {
-    console.log('Component did mount');
-  }
-  
   render() {
-    return (<header>
-      <h1>{this.state.logo}</h1>
-    </header>);
+      return (<header>
+        <div className="container">
+          <h1 className='header__logo'>{this.state.logo}</h1>
+          <Navigation />
+        </div>
+      </header>);
   }
 }

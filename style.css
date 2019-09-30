@@ -1,3 +1,57 @@
 body {
-  font-family: helvetica;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+.header__logo {
+  font-size: 17px;
+  font-weight: 600;
+}
+header {
+  background-color: #00C5FF;
+  color: white;
+  padding: 15px 0;
+}
+header .container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+header .navigation {
+  text-align: right;
+}
+header .navigation li {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+header .navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.users .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding: 40px 0;
+}
+
+.user {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
+  box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
+  background: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #d4d4d4;
+}
+
+.user__name {
+  font-size: 23px;
+  font-weight: bold;
 }

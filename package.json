@@ -2,7 +2,7 @@
   "name": "React-with-TypeScript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "test": "cross-env NODE_ENV=test jasmine"
   },
@@ -23,6 +23,7 @@
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/register": "^7.6.2",
+    "@types/jasmine": "^3.4.2",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^9.0.2",
     "cross-env": "^6.0.3",

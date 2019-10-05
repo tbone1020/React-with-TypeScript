@@ -8,7 +8,6 @@ interface IProps {
 export default class User extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
-    console.log(this.props.userInfo);
   }
 
   render() {

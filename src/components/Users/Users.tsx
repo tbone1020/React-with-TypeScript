@@ -15,10 +15,14 @@ export default class Users extends React.Component<IProps, IState> {
   }
 
   async componentDidMount(): Promise<any> {
-    const response = await fetch('https://jsonplaceholder.typicode.com/users');
-    const results = await response.json();
-    const elementsList = this.createUserElements(results);
-    this.addUsersElementToState(elementsList);
+    try {
+      const response = await fetch('https://jsonplaceholder.typicode.com/users');
+      const results = await response.json();
+      const elementsList = this.createUserElements(results);
+      this.addUsersElementToState(elementsList);
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   createUserElements(userList: any[]): any {

@@ -3,10 +3,10 @@ import Header from './Header/Header';
 import Users from './Users/Users';
 
 export class App extends React.Component {
-    render() {
-        return (<main role="role">
-          <Header />
-          <Users />
-        </main>);
-    }
+  render() {
+      return (<main role="role">
+        <Header />
+        <Users />
+      </main>);
+  }
 }

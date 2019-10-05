@@ -1,5 +1,5 @@
 import * as React from "react";
-import User from './User';
+import User from './User/User';
 
 export interface IState {
   userElementList: Object[];
